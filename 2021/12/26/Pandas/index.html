@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Hexo">
+    <meta name="keywords" content="Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | Hexo</title>
+    <title>Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -443,7 +443,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-12-21
+                    2021-12-26
                 </div>
                 
 
@@ -464,19 +464,207 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+                <hr>
+<h2 id="title-Pandas"><a href="#title-Pandas" class="headerlink" title="title:Pandas"></a>title:Pandas</h2><h1 id="Pandas-潘大师"><a href="#Pandas-潘大师" class="headerlink" title="Pandas(潘大师)"></a>Pandas(潘大师)</h1><p>Python数据分析库(Python data analysis libs)</p>
+<p><code>Pandas</code>是一个开源的，BSD许可的库，为<a target="_blank" rel="noopener" href="https://www.python.org/">Python (opens new window)</a>编程语言提供高性能，易于使用的数据结构和数据分析工具。</p>
+<p><code>Pandas</code>是<a target="_blank" rel="noopener" href="https://www.numfocus.org/open-source-projects.html">NumFOCUS (opens new window)</a>赞助的项目。这将有助于确保Pandas成为世界级开源项目的成功，并有可能<a target="_blank" rel="noopener" href="https://pandas.pydata.org/donate.html">捐赠 (opens new window)</a>给该项目。</p>
+<p>Pandas 是 Python 的核心数据分析支持库，拥有快速、灵活、明确的数据结构，旨在简单、直观、快速地处理关系型、标记型数据，是一款强大、灵活的开源数据分析工具。</p>
+<p>Pandas 主要数据结构是一维数据(Series)、二维数据（DataFrame），这两种数据结构能满足金融、统计、社会科学等领域中大多典型用例。Pandas 是基于 NumPy 开发，可以与其它第三方计算支持库完美集成。</p>
+<p>方便的数据视图化、直观地查看数据情况是非常必要的，对于非专业的数据分析人员查看数据走势、分布是一种很好展现形式。数据可视化相关的库也有很多，如 Matplotlib、Seaborn、Altair 等都可以快速学习并实现。</p>
+<p>Python在数据处理和准备方面一直做得很好，但在数据分析和建模方面就没那么好了。Pandas帮助填补了这一空白，使您能够在Python中执行整个数据分析工作流程，而不必切换到更特定于领域的语言，如R。</p>
+<h2 id="数据结构一-Series"><a href="#数据结构一-Series" class="headerlink" title="数据结构一 : Series"></a>数据结构一 : Series</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#绝对的一维数据</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">data : 一维序列</span></span><br><span class="line"><span class="string">index : 行索引</span></span><br><span class="line"><span class="string">name : 列名称</span></span><br><span class="line"><span class="string">copy : 是否复制数据</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line">pd.Series()</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#常用属性</span></span><br><span class="line">size : 代表的是长度</span><br><span class="line">index : 返回行索引</span><br><span class="line">dtype : 数据类型</span><br><span class="line">values : 返回一维数组</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h2 id="数据结构二-DataFrame"><a href="#数据结构二-DataFrame" class="headerlink" title="数据结构二 : DataFrame"></a>数据结构二 : DataFrame</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#绝对的二维数据</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">data : 二维序列</span></span><br><span class="line"><span class="string">columns : 列索引</span></span><br><span class="line"><span class="string">index : 行索引</span></span><br><span class="line"><span class="string">copy : 是否复制数据</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line">pd.Dataframe()</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#常用属性</span></span><br><span class="line">shape : 形状</span><br><span class="line">size : 代表元素总量</span><br><span class="line">columns : 返回列索引</span><br><span class="line">index : 返回行索引</span><br><span class="line">dtypes : 数据类型</span><br><span class="line">values : 返回二维数组</span><br><span class="line">info() : 返回综合信息</span><br><span class="line">to_dict() : 转变为二维<span class="built_in">dict</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h2><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>表现方式</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>中括号</td>
+<td>[“关联列名称”]</td>
+<td>只能获取列</td>
+</tr>
+<tr>
+<td>属性</td>
+<td>df.colname.indname</td>
+<td>顺序获取列和行</td>
+</tr>
+<tr>
+<td>关联获取</td>
+<td>df.loc[y:x]</td>
+<td>只能获取关联型索引</td>
+</tr>
+<tr>
+<td>枚举获取</td>
+<td>df.iloc[y:x]</td>
+<td>只能获取枚举型索引</td>
+</tr>
+</tbody></table>
+<h2 id="pd的运算"><a href="#pd的运算" class="headerlink" title="pd的运算"></a>pd的运算</h2><ul>
+<li>Series在index相同的条件下可以相互运算</li>
+<li>DataFrame在index和column相同的情况下可以运算(一般不做矩阵的点积)</li>
+</ul>
+<h2 id="CURD"><a href="#CURD" class="headerlink" title="CURD"></a>CURD</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#行</span></span><br><span class="line">df.loc[newind] = [A,B....N]</span><br><span class="line"><span class="comment">#列</span></span><br><span class="line">df[newcol] = np.nan</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#查询  返回新的df</span></span><br><span class="line">df.query(<span class="string">&quot;col1&gt;=10 &amp; col2==&#x27;str&#x27;&quot;</span>)</span><br><span class="line"></span><br><span class="line">df.loc[(df[<span class="string">&quot;col1&quot;</span>]&gt;=<span class="number">10</span>) &amp; (df[<span class="string">&quot;col2&quot;</span>]==<span class="string">&#x27;str&#x27;</span>)]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#修改</span></span><br><span class="line">df.loc[(df[<span class="string">&quot;col1&quot;</span>]&gt;=<span class="number">10</span>) &amp; (df[<span class="string">&quot;col2&quot;</span>]==<span class="string">&#x27;str&#x27;</span>),[<span class="string">&quot;col3&quot;</span>]] = <span class="string">&quot;??&quot;</span></span><br><span class="line"></span><br><span class="line">df.loc[df.query(<span class="string">&quot;col1&gt;=10 &amp; col2==&#x27;str&#x27;&quot;</span>).index,<span class="string">&quot;col3&quot;</span>] = <span class="string">&#x27;??&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#删除</span></span><br><span class="line">df.drop(df.query(<span class="string">&quot;col1&gt;=10 &amp; col2==&#x27;str&#x27;&quot;</span>).index,inplace=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#删除全部</span></span><br><span class="line">df.drop(df.index)</span><br></pre></td></tr></table></figure>
+
+<h2 id="空值检测和填充删除"><a href="#空值检测和填充删除" class="headerlink" title="空值检测和填充删除"></a>空值检测和填充删除</h2><p>检测空数据</p>
+<ul>
+<li>isnull()</li>
+<li>notnull()</li>
+<li>Pandas中主要是检测每一列的空值</li>
+</ul>
+<p>空值删除</p>
+<ul>
+<li>dropna(axis=0|1)</li>
+<li>优先删行,如果列空值比例过大,删列</li>
+</ul>
+<p>填充空值</p>
+<ul>
+<li>fillna()</li>
+<li>values : 指定填充一个固定的值</li>
+<li>method : 后补和前补</li>
+</ul>
+<h2 id="索引的堆变换"><a href="#索引的堆变换" class="headerlink" title="索引的堆变换"></a>索引的堆变换</h2><ul>
+<li>stack() : 列索引转变为行索引</li>
+<li>unstack() : 行索引转变为列索引(透视表变换)</li>
+</ul>
+<h2 id="DF拼接"><a href="#DF拼接" class="headerlink" title="DF拼接"></a>DF拼接</h2><ul>
+<li>concat</li>
+<li>[]当中可以写多个df</li>
+<li>行索引会重复,ignore_index重新设定索引</li>
+<li>axis切换合并的方向(axis=1很少见)</li>
+<li>join=”outer”</li>
+<li>一般是当做union取使用的</li>
+</ul>
+<h3 id="append"><a href="#append" class="headerlink" title="append"></a>append</h3><p><code>df.append(df|sr,ignore_index=True)</code></p>
+<ul>
+<li>没有axis,只能实现上下合并</li>
+</ul>
+<h2 id="DF合并"><a href="#DF合并" class="headerlink" title="DF合并"></a>DF合并</h2><ul>
+<li><p>merge</p>
+</li>
+<li><p>每次只能合并两组数据</p>
+</li>
+<li><p>要求列名相同且数据类型相同</p>
+</li>
+<li><p>假如列名不同,使用left_on,right_on</p>
+</li>
+<li><p>假如多个列名相同on,指定关联列名,suffixes修改无关同名列的后缀(防止冲突)</p>
+</li>
+<li><p>left_index和right_index在老版本中代表使用行索引作为关联(新版本中无所谓)</p>
+</li>
+</ul>
+<h3 id="join"><a href="#join" class="headerlink" title="join"></a>join</h3><p><code>df.join(df1,on=&#39;col&#39;)</code></p>
+<ul>
+<li>要求合并的两组数据关联列名相同</li>
+</ul>
+<h2 id="映射"><a href="#映射" class="headerlink" title="映射"></a>映射</h2><ul>
+<li><p>map</p>
+<ul>
+<li>只能够被Series所调用</li>
+<li>可以传递dict和func</li>
+</ul>
+</li>
+<li><p>apply</p>
+<ul>
+<li>可以被df或series调用</li>
+<li>如果被df调用,需要控制方向,axis=1,行方向控制</li>
+<li>如果被df调用,那么计算速度会大幅度下降</li>
+<li>和transform非常类型</li>
+</ul>
+</li>
+<li><p>agg</p>
+<ul>
+<li>不同的列实现不同的聚合计算</li>
+<li>支持dict{“cols1”:”mean”,”cols2”:”min”}</li>
+</ul>
+</li>
+<li><p>rename</p>
+<ul>
+<li>主要是修改列名称的</li>
+<li>支持dict类型{“old_col_name”:”new_col_name”}</li>
+</ul>
+</li>
+<li><p>replace</p>
+<ul>
+<li>替换Series当中的元素</li>
+</ul>
+</li>
+</ul>
+<h2 id="去重"><a href="#去重" class="headerlink" title="去重"></a>去重</h2><ul>
+<li><code>duplicated</code><ul>
+<li>subset : 指定的列对比重复值</li>
+<li>keep : 重复值的起始位置</li>
+</ul>
+</li>
+<li><code>drop_duplicats</code><ul>
+<li>subset : 指定的列对比重复值</li>
+</ul>
+</li>
+</ul>
+<h2 id="描述统计"><a href="#描述统计" class="headerlink" title="描述统计"></a>描述统计</h2><p><code>df.describe()</code></p>
+<ul>
+<li>返回每一列的均值</li>
+<li>返回每一列的标准差</li>
+<li>最大和最小</li>
+<li>返回数量</li>
+<li>返回四分位</li>
+</ul>
+<h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><ul>
+<li><p>sort_values(by=[cols])</p>
+</li>
+<li><p>sort_index(ascendeing=True)</p>
+</li>
+</ul>
+<h2 id="分组"><a href="#分组" class="headerlink" title="分组"></a>分组</h2><ul>
+<li>groupby(by=[cols])<ul>
+<li>返回DataFrameGroupby对象,当前对象只能调用映射函数或者是聚合函数</li>
+</ul>
+</li>
+<li>groupby(by=[cols]).col<ul>
+<li>返回SeriesGroupby对象,当前对象只能调用映射函数或者是聚合函数</li>
+</ul>
+</li>
+</ul>
+<h2 id="时间操作"><a href="#时间操作" class="headerlink" title="时间操作"></a>时间操作</h2><p><code>pd.to_datetime(series,cache=True)</code></p>
+<ul>
+<li>把字符串的时间转变为datetime64类型</li>
+</ul>
+<p><code>df.to_peroid()</code></p>
+<ul>
+<li>要求时间序列必须作为行索引</li>
+<li>时间范围的映射</li>
+<li>时间计算的时候不可用(画图的时候不能用)</li>
+</ul>
+<p><code>Series.dt</code></p>
+<ul>
+<li>Series必须是时间类型</li>
+</ul>
+<p><code>df.resample(&quot;D&quot;)</code></p>
+<ul>
+<li>数据降帧的时候使用的</li>
+<li>数据聚合的时候，代替groupby进行使用</li>
+</ul>
+<p><code>时间计算</code></p>
+<ul>
+<li>(datetime64 - datetime64) // np.timedelta64(1, ‘D’)</li>
+</ul>
 
                 
             </div>
@@ -503,7 +691,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/12/21/hello-world/">http://example.com/2021/12/21/hello-world/</a>
+                    <a href="http://example.com/2021/12/26/Pandas/">http://example.com/2021/12/26/Pandas/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -712,7 +900,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/12/26/Pandas/">
+                <a href="/2021/12/26/Numpy/">
                     <div class="card-image">
                         
                         
@@ -746,7 +934,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2021/12/21/hello-world/">
@@ -776,7 +964,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
