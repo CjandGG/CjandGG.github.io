@@ -241,7 +241,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right, #278BFD 0%, #A7CFFD 100%);
 }
 
 .text-color {
@@ -257,7 +257,7 @@ mark {
     position: fixed;
     bottom: 0;
     z-index: 300;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background: linear-gradient(to right, #278BFD 0%, #A7CFFD 100%);
     opacity: 0.8;
 }
 
@@ -387,9 +387,9 @@ header .side-nav .social-link {
 }
 
 .cover-btns a:hover {
-    border: 1px solid #f44336;
-    background-color: #f44336;
-    box-shadow: 0 14px 26px -12px rgba(233, 30, 99, 0.42),
+    border: 1px solid #278BFD;
+    background-color: #278BFD;
+    box-shadow: 0 14px 26px -12px rgba(20, 30, 129, 0.42),
     0 4px 23px 0 rgba(0, 0, 0, 0.12),
     0 8px 10px -5px rgba(233, 30, 99, 0.2);
 }
@@ -882,7 +882,7 @@ article a {
 
 article a:hover {
     font-weight: bold;
-    color: #42b983;
+    color: #278BFD;
     text-decoration: underline;
 }
 
@@ -1102,7 +1102,7 @@ article .article-tags .chip {
 
 #artDetail .post-info .post-category:hover {
     font-weight: bold;
-    color: #42b983;
+    color: #278BFD;
     text-decoration: underline;
 }
 
@@ -1165,7 +1165,7 @@ article .article-tags .chip {
 
 #artDetail .reprint a {
     font-size: 1.05rem;
-    color: #42b983;
+    color: #278BFD;
     font-weight: 500;
 }
 
@@ -1181,7 +1181,7 @@ article .article-tags .chip {
 
 #articleContent a {
     padding: 0 2px;
-    color: #42b983;
+    color: #278BFD;
     font-weight: 500;
     text-decoration: underline;
     word-wrap: break-word;
@@ -1305,7 +1305,7 @@ thead {
 
 .chip-container .chip-active {
     color: #FFF !important;
-    background: linear-gradient(to bottom right, #FF5E3A 0%, #FF2A68 100%) !important;
+    background: linear-gradient(to bottom right, #278BFD 0%, #A7CFFD 100%) !important;
     box-shadow: 2px 5px 10px #aaa !important;
 }
 
@@ -1324,7 +1324,7 @@ thead {
 
 .chip-container .chip:hover {
     color: #fff;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%) !important;
+    background: linear-gradient(to right, #278BFD 0%, #A7CFFD 100%) !important;
 }
 
 .chip .tag-length {
@@ -1334,7 +1334,7 @@ thead {
 }
 
 .chip-default .tag-length {
-    color: #e91e63;
+    color: #278BFD;
     margin-top: 1px;
 }
 
@@ -1349,7 +1349,7 @@ thead {
     height: 80px;
     margin: 10px 0 50px -20px;
     padding: 21px 10px;
-    background-color: #ff5722;
+    background-color: #278BFD;
     color: #fff;
     font-size: 1.8rem;
     font-weight: 600;
@@ -1365,7 +1365,7 @@ thead {
     height: 60px;
     margin: 10px 0 30px -10px;
     padding: 14px 16px;
-    background-color: #ef6c00;
+    background-color: #5DA8FD;
     color: #fff;
     font-size: 1.7rem;
     font-weight: 600;
@@ -1378,7 +1378,7 @@ thead {
 #cd-timeline .day {
     position: relative;
     padding: 8px 10px;
-    background-color: #ffa726;
+    background-color: #DDECFD;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 500;
@@ -1400,7 +1400,7 @@ thead {
     left: 18px;
     height: 100%;
     width: 4px;
-    background: #0f9d58;
+    background: #278BFD;
 }
 
 @media only screen and (min-width: 900px) {
@@ -1637,7 +1637,7 @@ thead {
     padding: 0;
     color: #fff;
     border: 1px solid #0f9d58;
-    background: radial-gradient(#4cbf30, #0f9d58);
+    background: radial-gradient(#5DA8FD,#278BFD);
     font-size: 0.9rem;
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(50, 50, 93, .21), 0 2px 3px rgba(0, 0, 0, .1);
@@ -1880,7 +1880,7 @@ footer .copy-right {
 
 .search-result-list .search-result-title {
     font-size: 1.4rem;
-    color: #42b983;
+    color: #5DA8FD;
 }
 
 .search-result-list li {
@@ -1910,7 +1910,7 @@ footer .copy-right {
 }
 
 .top-scroll .btn-floating {
-    background: linear-gradient(to bottom right, #FF5E3A 0%, #FF2A68 100%);
+    background: linear-gradient(to bottom right, #278BFD 0%, #A7CFFD 100%);
     width: 48px;
     height: 48px;
 }
