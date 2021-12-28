@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="CCandGG">
+    <meta name="keywords" content="Java入门, CCandGG">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>CCandGG</title>
+    <title>Java入门 | CCandGG</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -315,7 +315,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">Java入门</h1>
                 </div>
             </div>
         </div>
@@ -429,9 +429,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Java/">
+                                <span class="chip bg-color">Java</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -443,7 +447,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-12-26
+                    2021-12-28
                 </div>
                 
 
@@ -464,207 +468,31 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <hr>
-<h2 id="Pandas"><a href="#Pandas" class="headerlink" title="Pandas"></a>Pandas</h2><p>Python数据分析库(Python data analysis libs)</p>
-<p><code>Pandas</code>是一个开源的，BSD许可的库，为<a target="_blank" rel="noopener" href="https://www.python.org/">Python (opens new window)</a>编程语言提供高性能，易于使用的数据结构和数据分析工具。</p>
-<p><code>Pandas</code>是<a target="_blank" rel="noopener" href="https://www.numfocus.org/open-source-projects.html">NumFOCUS (opens new window)</a>赞助的项目。这将有助于确保Pandas成为世界级开源项目的成功，并有可能<a target="_blank" rel="noopener" href="https://pandas.pydata.org/donate.html">捐赠 (opens new window)</a>给该项目。</p>
-<p>Pandas 是 Python 的核心数据分析支持库，拥有快速、灵活、明确的数据结构，旨在简单、直观、快速地处理关系型、标记型数据，是一款强大、灵活的开源数据分析工具。</p>
-<p>Pandas 主要数据结构是一维数据(Series)、二维数据（DataFrame），这两种数据结构能满足金融、统计、社会科学等领域中大多典型用例。Pandas 是基于 NumPy 开发，可以与其它第三方计算支持库完美集成。</p>
-<p>方便的数据视图化、直观地查看数据情况是非常必要的，对于非专业的数据分析人员查看数据走势、分布是一种很好展现形式。数据可视化相关的库也有很多，如 Matplotlib、Seaborn、Altair 等都可以快速学习并实现。</p>
-<p>Python在数据处理和准备方面一直做得很好，但在数据分析和建模方面就没那么好了。Pandas帮助填补了这一空白，使您能够在Python中执行整个数据分析工作流程，而不必切换到更特定于领域的语言，如R。</p>
-<h2 id="数据结构一-Series"><a href="#数据结构一-Series" class="headerlink" title="数据结构一 : Series"></a>数据结构一 : Series</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#绝对的一维数据</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">data : 一维序列</span></span><br><span class="line"><span class="string">index : 行索引</span></span><br><span class="line"><span class="string">name : 列名称</span></span><br><span class="line"><span class="string">copy : 是否复制数据</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line">pd.Series()</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#常用属性</span></span><br><span class="line">size : 代表的是长度</span><br><span class="line">index : 返回行索引</span><br><span class="line">dtype : 数据类型</span><br><span class="line">values : 返回一维数组</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="数据结构二-DataFrame"><a href="#数据结构二-DataFrame" class="headerlink" title="数据结构二 : DataFrame"></a>数据结构二 : DataFrame</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#绝对的二维数据</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">data : 二维序列</span></span><br><span class="line"><span class="string">columns : 列索引</span></span><br><span class="line"><span class="string">index : 行索引</span></span><br><span class="line"><span class="string">copy : 是否复制数据</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line">pd.Dataframe()</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#常用属性</span></span><br><span class="line">shape : 形状</span><br><span class="line">size : 代表元素总量</span><br><span class="line">columns : 返回列索引</span><br><span class="line">index : 返回行索引</span><br><span class="line">dtypes : 数据类型</span><br><span class="line">values : 返回二维数组</span><br><span class="line">info() : 返回综合信息</span><br><span class="line">to_dict() : 转变为二维<span class="built_in">dict</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h2><table>
-<thead>
-<tr>
-<th>类型</th>
-<th>表现方式</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>中括号</td>
-<td>[“关联列名称”]</td>
-<td>只能获取列</td>
-</tr>
-<tr>
-<td>属性</td>
-<td>df.colname.indname</td>
-<td>顺序获取列和行</td>
-</tr>
-<tr>
-<td>关联获取</td>
-<td>df.loc[y:x]</td>
-<td>只能获取关联型索引</td>
-</tr>
-<tr>
-<td>枚举获取</td>
-<td>df.iloc[y:x]</td>
-<td>只能获取枚举型索引</td>
-</tr>
-</tbody></table>
-<h2 id="pd的运算"><a href="#pd的运算" class="headerlink" title="pd的运算"></a>pd的运算</h2><ul>
-<li>Series在index相同的条件下可以相互运算</li>
-<li>DataFrame在index和column相同的情况下可以运算(一般不做矩阵的点积)</li>
-</ul>
-<h2 id="CURD"><a href="#CURD" class="headerlink" title="CURD"></a>CURD</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#行</span></span><br><span class="line">df.loc[newind] = [A,B....N]</span><br><span class="line"><span class="comment">#列</span></span><br><span class="line">df[newcol] = np.nan</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#查询  返回新的df</span></span><br><span class="line">df.query(<span class="string">&quot;col1&gt;=10 &amp; col2==&#x27;str&#x27;&quot;</span>)</span><br><span class="line"></span><br><span class="line">df.loc[(df[<span class="string">&quot;col1&quot;</span>]&gt;=<span class="number">10</span>) &amp; (df[<span class="string">&quot;col2&quot;</span>]==<span class="string">&#x27;str&#x27;</span>)]</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#修改</span></span><br><span class="line">df.loc[(df[<span class="string">&quot;col1&quot;</span>]&gt;=<span class="number">10</span>) &amp; (df[<span class="string">&quot;col2&quot;</span>]==<span class="string">&#x27;str&#x27;</span>),[<span class="string">&quot;col3&quot;</span>]] = <span class="string">&quot;??&quot;</span></span><br><span class="line"></span><br><span class="line">df.loc[df.query(<span class="string">&quot;col1&gt;=10 &amp; col2==&#x27;str&#x27;&quot;</span>).index,<span class="string">&quot;col3&quot;</span>] = <span class="string">&#x27;??&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#删除</span></span><br><span class="line">df.drop(df.query(<span class="string">&quot;col1&gt;=10 &amp; col2==&#x27;str&#x27;&quot;</span>).index,inplace=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#删除全部</span></span><br><span class="line">df.drop(df.index)</span><br></pre></td></tr></table></figure>
-
-<h2 id="空值检测和填充删除"><a href="#空值检测和填充删除" class="headerlink" title="空值检测和填充删除"></a>空值检测和填充删除</h2><p>检测空数据</p>
-<ul>
-<li>isnull()</li>
-<li>notnull()</li>
-<li>Pandas中主要是检测每一列的空值</li>
-</ul>
-<p>空值删除</p>
-<ul>
-<li>dropna(axis=0|1)</li>
-<li>优先删行,如果列空值比例过大,删列</li>
-</ul>
-<p>填充空值</p>
-<ul>
-<li>fillna()</li>
-<li>values : 指定填充一个固定的值</li>
-<li>method : 后补和前补</li>
-</ul>
-<h2 id="索引的堆变换"><a href="#索引的堆变换" class="headerlink" title="索引的堆变换"></a>索引的堆变换</h2><ul>
-<li>stack() : 列索引转变为行索引</li>
-<li>unstack() : 行索引转变为列索引(透视表变换)</li>
-</ul>
-<h2 id="DF拼接"><a href="#DF拼接" class="headerlink" title="DF拼接"></a>DF拼接</h2><ul>
-<li>concat</li>
-<li>[]当中可以写多个df</li>
-<li>行索引会重复,ignore_index重新设定索引</li>
-<li>axis切换合并的方向(axis=1很少见)</li>
-<li>join=”outer”</li>
-<li>一般是当做union取使用的</li>
-</ul>
-<h3 id="append"><a href="#append" class="headerlink" title="append"></a>append</h3><p><code>df.append(df|sr,ignore_index=True)</code></p>
-<ul>
-<li>没有axis,只能实现上下合并</li>
-</ul>
-<h2 id="DF合并"><a href="#DF合并" class="headerlink" title="DF合并"></a>DF合并</h2><ul>
-<li><p>merge</p>
-</li>
-<li><p>每次只能合并两组数据</p>
-</li>
-<li><p>要求列名相同且数据类型相同</p>
-</li>
-<li><p>假如列名不同,使用left_on,right_on</p>
-</li>
-<li><p>假如多个列名相同on,指定关联列名,suffixes修改无关同名列的后缀(防止冲突)</p>
-</li>
-<li><p>left_index和right_index在老版本中代表使用行索引作为关联(新版本中无所谓)</p>
-</li>
-</ul>
-<h3 id="join"><a href="#join" class="headerlink" title="join"></a>join</h3><p><code>df.join(df1,on=&#39;col&#39;)</code></p>
-<ul>
-<li>要求合并的两组数据关联列名相同</li>
-</ul>
-<h2 id="映射"><a href="#映射" class="headerlink" title="映射"></a>映射</h2><ul>
-<li><p>map</p>
-<ul>
-<li>只能够被Series所调用</li>
-<li>可以传递dict和func</li>
-</ul>
-</li>
-<li><p>apply</p>
-<ul>
-<li>可以被df或series调用</li>
-<li>如果被df调用,需要控制方向,axis=1,行方向控制</li>
-<li>如果被df调用,那么计算速度会大幅度下降</li>
-<li>和transform非常类型</li>
-</ul>
-</li>
-<li><p>agg</p>
-<ul>
-<li>不同的列实现不同的聚合计算</li>
-<li>支持dict{“cols1”:”mean”,”cols2”:”min”}</li>
-</ul>
-</li>
-<li><p>rename</p>
-<ul>
-<li>主要是修改列名称的</li>
-<li>支持dict类型{“old_col_name”:”new_col_name”}</li>
-</ul>
-</li>
-<li><p>replace</p>
-<ul>
-<li>替换Series当中的元素</li>
-</ul>
-</li>
-</ul>
-<h2 id="去重"><a href="#去重" class="headerlink" title="去重"></a>去重</h2><ul>
-<li><code>duplicated</code><ul>
-<li>subset : 指定的列对比重复值</li>
-<li>keep : 重复值的起始位置</li>
-</ul>
-</li>
-<li><code>drop_duplicats</code><ul>
-<li>subset : 指定的列对比重复值</li>
-</ul>
-</li>
-</ul>
-<h2 id="描述统计"><a href="#描述统计" class="headerlink" title="描述统计"></a>描述统计</h2><p><code>df.describe()</code></p>
-<ul>
-<li>返回每一列的均值</li>
-<li>返回每一列的标准差</li>
-<li>最大和最小</li>
-<li>返回数量</li>
-<li>返回四分位</li>
-</ul>
-<h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><ul>
-<li><p>sort_values(by=[cols])</p>
-</li>
-<li><p>sort_index(ascendeing=True)</p>
-</li>
-</ul>
-<h2 id="分组"><a href="#分组" class="headerlink" title="分组"></a>分组</h2><ul>
-<li>groupby(by=[cols])<ul>
-<li>返回DataFrameGroupby对象,当前对象只能调用映射函数或者是聚合函数</li>
-</ul>
-</li>
-<li>groupby(by=[cols]).col<ul>
-<li>返回SeriesGroupby对象,当前对象只能调用映射函数或者是聚合函数</li>
-</ul>
-</li>
-</ul>
-<h2 id="时间操作"><a href="#时间操作" class="headerlink" title="时间操作"></a>时间操作</h2><p><code>pd.to_datetime(series,cache=True)</code></p>
-<ul>
-<li>把字符串的时间转变为datetime64类型</li>
-</ul>
-<p><code>df.to_peroid()</code></p>
-<ul>
-<li>要求时间序列必须作为行索引</li>
-<li>时间范围的映射</li>
-<li>时间计算的时候不可用(画图的时候不能用)</li>
-</ul>
-<p><code>Series.dt</code></p>
-<ul>
-<li>Series必须是时间类型</li>
-</ul>
-<p><code>df.resample(&quot;D&quot;)</code></p>
-<ul>
-<li>数据降帧的时候使用的</li>
-<li>数据聚合的时候，代替groupby进行使用</li>
-</ul>
-<p><code>时间计算</code></p>
-<ul>
-<li>(datetime64 - datetime64) // np.timedelta64(1, ‘D’)</li>
-</ul>
+                <h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>在我们学习Java的过程中,掌握其中的基本概念对我们的学习无论是J2SE,J2EE,J2ME都是很重要的,J2SE是Java的基础,所以有必要对其中的基本概念做以归纳,以便大家在以后的学习过程中更好的理解java的精髓,在此我总结了30条基本的概念。</p>
+<h1 id="Java概述"><a href="#Java概述" class="headerlink" title="Java概述:"></a>Java概述:</h1><p> 　　目前Java主要应用于中间件的开发(middleware)—处理客户机于服务器之间的通信技术,早期的实践证明,Java不适合pc应用程序的开发,其发展逐渐变成在开发手持设备,互联网信息站,及车载计算机的开发.Java于其他语言所不同的是程序运行时提供了平台的独立性,称许可以在windows,solaris,linux其他操作系统上使用完全相同的代码.Java的语法与C++语法类似,C++/C程序员很容易掌握,而且Java是完全的彻底的面向对象的,其中提出了很好的GC(Garbage Collector)垃圾处理机制,防止内存溢出。</p>
+<h3 id="Java的白皮书为我们提出了Java语言的11个关键特性。"><a href="#Java的白皮书为我们提出了Java语言的11个关键特性。" class="headerlink" title="Java的白皮书为我们提出了Java语言的11个关键特性。"></a>Java的白皮书为我们提出了Java语言的11个关键特性。</h3><p> 　　(1)Easy:Java的语法比C++的相对简单,另一个方面就是Java能使软件在很小的机器上运行,基础解释其和类库的支持的大小约为40kb,增加基本的标准库和线程支持的内存需要增加125kb。</p>
+<p> 　　(2)分布式:Java带有很强大的TCP/IP协议族的例程库,Java应用程序能够通过URL来穿过网络来访问远程对象,由于servlet机制的出现,使Java编程非常的高效,现在许多的大的web server都支持servlet。</p>
+<p> 　　(3)OO:面向对象设计是把重点放在对象及对象的接口上的一个编程技术.其面向对象和C++有很多不同,在与多重继承的处理及Java的原类模型。</p>
+<p> 　　(4)健壮特性:Java采取了一个安全指针模型,能减小重写内存和数据崩溃的可能型。</p>
+<p> 　　(5)安全:Java用来设计网路和分布系统,这带来了新的安全问题,Java可以用来构建防病毒和防攻击的System.事实证明Java在防毒这一方面做的比较好。</p>
+<p> 　　(6)中立体系结构:Java编译其生成体系结构中立的目标文件格式可以在很多处理器上执行,编译器产生的指令字节码(Javabytecode)实现此特性,此字节码可以在任何机器上解释执行。</p>
+<p> 　　(7)可移植性:Java中对基本数据结构类型的大小和算法都有严格的规定所以可移植性很好。</p>
+<p> 　　(8)多线程:Java处理多线程的过程很简单,Java把多线程实现交给底下操作系统或线程程序完成.所以多线程是Java作为服务器端开发语言的流行原因之一。</p>
+<p> 　　(9)Applet和servlet:能够在网页上执行的程序叫Applet,需要支持Java的浏览器很多,而applet支持动态的网页,这是很多其他语言所不能做到的。</p>
+<p> 我认为，作为一名合格的程序员，精通一门语言只是最最基本的要求，除此之外，具备扎实的基础知识、了解主流的技术框架、具备快速学习的能力也都非常重要。语言是帮助你实现想法的工具，而作为程序员来说最为重要的东西是语言背后的你的想法，而这些想法需要通过长期的基础积累、经验积累而获得。</p>
+<p>我从大二的时候开始接触编程，到现在也有五个年头了。这五年我走了不少弯路、踩了不少坑。至此收到阿里offer，也算是达到了我人生第一阶段的目标。我把我这五年踩过的坑与大家分享，希望大家能少走弯路、在技术的道路上越走越远。</p>
+<p>回归正题，我觉得Java学习过程可以分为三个阶段：</p>
+<h2 id="第一阶段目标：打牢基础"><a href="#第一阶段目标：打牢基础" class="headerlink" title="第一阶段目标：打牢基础"></a><strong>第一阶段目标：打牢基础</strong></h2><p>​        当你准备开始接触Java前，你先等一等，因为你要做的第一件事是要打牢计算机基础，而非直接学习语言。当我做的项目渐渐多起来的时候，我愈发地感觉到计算机基础对程序员的重要性。这就像习武之人练习马步一样、<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E8%BE%BE%E8%8A%AC%E5%A5%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:237965231%7D">达芬奇</a>周而复始地画鸡蛋一样。从短期来看，基本功的练习并不会立即出成效。也许这个过程会伴随着枯燥乏味，但我们不能鼠目寸光，从长远角度来看，一个程序员基本功的扎实程度决定了这个程序员技术之路能走多远、能走多久。</p>
+<p>​        所以我觉得，如果时间允许的话，花上大半年甚至一年的时间学习基本功也不为过。学习任何一项技术都是一样，我们需要耐得住寂寞。<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E5%9F%BA%E6%9C%AC%E5%8A%9F&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:237965231%7D">基本功</a>学习的过程必然会枯燥乏味，但它对我们未来的发展之路却影响深远。所以大家一定要耐得住寂寞，迈好、并且迈稳作为程序员的第一步。</p>
+<p>​       计算机基础有五大课程：操作系统、计算机网络、数据结构、算法、数据库。你究竟需要花多少时间来学习这些基础课程，这取决于你目前的状态。如果你是计算机专业的学生，并且仍处于大一或大二，那就请你珍惜每次上课的机会吧。听老师讲一遍、自己再学一遍、有问题还可以和老师交流，这样的机会实在难得，且行且珍惜。</p>
+<p>​        如果你并不是计算机专业的学生，那也好办，调动你的情报搜集能力，去周边名校的计算机专业蹭课吧。我的学校靠近南大，就有很多同学潜入南大蹭<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E5%91%A8%E5%BF%97%E5%8D%8E&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:237965231%7D">周志华</a>大佬的机器学习。去了之后才发现，200人教室里人满为患，原来都是前来蹭课的同道中人啊。</p>
+<p>​        如果你即将面临找工作，那么就更应该抓紧猛攻这些基础课程。现在的互联网公司都很看重学生的基础功底，因为学校里做的项目在面试官的眼中大多都只能算是『玩具』（PS：大佬除外），所以项目经验只能算是你的加分项，基础功底才是第一要义。</p>
+<h2 id="第二阶段目标：精通Java"><a href="#第二阶段目标：精通Java" class="headerlink" title="第二阶段目标：精通Java"></a><strong>第二阶段目标：精通Java</strong></h2><p>​       作为一名Java程序员，对Java这门吃饭的语言必须要达到精通的程度。因为工作之后，每天接触最多的就是Java，其次才可能是你的女朋友（当然前提是得有女朋友，逃）。所谓『精通』是指你不仅得了解如何使用Java，还得明白它背后的原理，也就是得『知其然，知其所以然』。比如，我们都知道使用关键字new可以创建一个对象，但这远远不够，我们还得知道对象创建的过程是怎样的？对象创建完成后它存储在哪儿？什么时候会被GC回收？也只在有了解了它背后的原理后，我们才能写出更加高质量、高性能的代码。</p>
+<p>​       当然，学习Java也不是一步登天，可以把他分成两个阶段去学习。第一个阶段先把Java用起来，也就是只需要做到『知其然』即可。当熟悉了Java的所有语法、API之后，就可以拿几个项目练练手。项目能帮助你加深对基础语法、对API的理解。当你拥有了一些项目经验，对Java也有了自己的见解，接下来就可以深入Java背后的原理了，也就是开始『知其所以然』的过程。你需要学习JVM，了解Java的内存模型、内存的管理、垃圾回收、类加载机制；你需要学习并发编程，了解如何保证线程安全的前提下，提升程序的处理速度；你也需要开始尝试阅读JDK源码，了解<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=Java%E5%AE%B9%E5%99%A8&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:237965231%7D">Java容器</a>用了哪些数据结构，在什么样的业务场景下选择什么样的数据结构。</p>
+<p>​       学习Java的确是一个漫长的过程，也只有你的时间、你的耐心、你的思考，才能慢慢地开启通往Java世界的大门。</p>
+<h2 id="第三阶段目标：锻炼快速上手新技术的能力"><a href="#第三阶段目标：锻炼快速上手新技术的能力" class="headerlink" title="第三阶段目标：锻炼快速上手新技术的能力"></a><strong>第三阶段目标：锻炼快速上手新技术的能力</strong></h2><p>​        我觉得衡量一个程序员水平的高低，并不是看他精通多少种技术、擅长多少个框架，而是看他是否具备快速学习的能力。因为当下的技术层出不穷，技术更新迭代的速度远超过我们学习的速度。所以具备快速学习的能力尤为重要。当你已经具备一定的计算机基础之后，就可以有意识地锻炼自己的这项能力。那怎么锻炼呢？下面分享下我学习的体会。</p>
+<p>​        我觉得任何一项技术都遵循『2-8原则』，也就是在一项技术的整个体系结构中，最为核心、最为重要的部分可能仅仅占这项技术整个体系结构的20%，剩下的80%是相对次要的。所以，如果我们需要在比较短的时间内快速上手一项新技术的话，那么最为关键的就是要找准这项技术中20%的核心知识点，先把它们理解、吃透。这样就可以马上使用这项技术了。那么剩下80%的知识点可以在项目<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E7%A9%BA%E7%AA%97%E6%9C%9F&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:237965231%7D">空窗期</a>慢慢地补充。这样一段时间后，这项技术的整个体系结构都将被我们掌握。</p>
+<p>​        到了这个阶段，你可以开始接触一些应用层技术，比如：Spring、MyBatis、Shiro……学习这些技术最好的办法就是理论结合实践，以项目驱动的方式去学习。毕竟编程是一项熟能生巧的技术，多多动手能加深你对技术的理解，多多思考也能提高你编码的能力，两者相辅相成。并且在学习这些技术的过程中，可以有意识地采用这种『2-8原则』学习方法，培养自己快速学习的能力。举个栗子，如果你正要做的这个项目需要使用Spring，那么你首先要做的就是要花点时间，找到、并且找准Spring中最为核心的20%知识点——Ioc和AOP（这些信息可以通过大牛的博客、Spring的官网获得）。OK，那么Spring其他的技术先不用管，你要做的就是先把Ioc和AOP这两个概念搞懂，包括它们的使用方式、背后的思想。（PS：学习技术最好的途径就是看它的官网，然而官网一般都是英文，对于英文比较捉鸡的同学可以看一些大牛的博客、或者视频教程）当把这两个概念搞懂之后，Spring基本就可以为我们所用。接下来，我们可以利用项目的空窗期把Spring剩余80%的知识点慢慢地补充，这样一段时间后，Spring的整个体系结构就被我们掌握。然而在这整个过程中，还会涉及到你的信息搜索能力、信息理解能力，这些软实力都需要你通过大量的练习慢慢积累。所以，少年，抓紧时间，赶紧行动吧。</p>
 
                 
             </div>
@@ -691,7 +519,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/12/26/Pandas/">http://example.com/2021/12/26/Pandas/</a>
+                    <a href="http://example.com/2021/12/28/html%E5%85%A5%E9%97%A8/">http://example.com/2021/12/28/html%E5%85%A5%E9%97%A8/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -728,7 +556,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/Java/">
+                                    <span class="chip bg-color">Java</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -896,29 +728,29 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/12/27/Js%E5%9F%BA%E7%A1%80/">
+                <a href="/2021/12/28/html%E5%85%A5%E9%97%A8/">
                     <div class="card-image">
                         
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Java入门">
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                        
-                        <span class="card-title"></span>
+                        <span class="card-title">Java入门</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Java入门指南
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-27
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-28
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -926,6 +758,15 @@
                             
                         </span>
                     </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -937,23 +778,23 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/12/26/NumPy/">
+                <a href="/2021/12/27/Js%E5%9F%BA%E7%A1%80/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="NumPy介绍">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Js基础">
                         
-                        <span class="card-title">NumPy介绍</span>
+                        <span class="card-title">Js基础</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            NumPy的一些介绍 and 使用
+                            Js基础
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-27
                             </span>
                         <span class="publish-author">
                             
@@ -966,8 +807,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/NumPy/">
-                        <span class="chip bg-color">NumPy</span>
+                    <a href="/tags/JavaScript/">
+                        <span class="chip bg-color">JavaScript</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%BD%91%E9%A1%B5/">
+                        <span class="chip bg-color">网页</span>
                     </a>
                     
                 </div>
