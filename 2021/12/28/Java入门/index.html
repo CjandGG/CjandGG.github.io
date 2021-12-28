@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Js基础, CCandGG">
+    <meta name="keywords" content="Java入门, CCandGG">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Js基础 | CCandGG</title>
+    <title>Java入门 | CCandGG</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Js基础</h1>
+                    <h1 class="description center-align post-title">Java入门</h1>
                 </div>
             </div>
         </div>
@@ -431,12 +431,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/JavaScript/">
-                                <span class="chip bg-color">JavaScript</span>
-                            </a>
-                        
-                            <a href="/tags/%E7%BD%91%E9%A1%B5/">
-                                <span class="chip bg-color">网页</span>
+                            <a href="/tags/Java/">
+                                <span class="chip bg-color">Java</span>
                             </a>
                         
                     </div>
@@ -451,7 +447,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-12-27
+                    2021-12-28
                 </div>
                 
 
@@ -472,225 +468,32 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="一、js基础"><a href="#一、js基础" class="headerlink" title="一、js基础"></a>一、js基础</h1><ol>
-<li>js的组成<ul>
-<li>DOM：文档对象模型，document，网页的操作</li>
-<li>BOM：浏览器对象模型，window，浏览器的窗口操作</li>
-<li>ECMAScript：语法规范，规定js以什么形式在浏览器中操作网页，</li>
-</ul>
-</li>
-<li>js写在哪<ul>
-<li>内联：作为html的属性存在，通过行为触发</li>
-<li>内部：使用script标签包裹，可以不通过行为触发，会自动执行</li>
-<li>外部：写在js文件中，通过script的src属性引入到html文件中，可以不通过行为触发，会自动执行</li>
-</ul>
-</li>
-<li>js的打印语句<ul>
-<li>BOM：弹出框：alert()</li>
-<li>DOM：页面：document.write()</li>
-<li>V8引擎：控制台：console.log()</li>
-</ul>
-</li>
-<li>数据类型<ul>
-<li>根据typeof返回的结果划分<ul>
-<li>string</li>
-<li>number</li>
-<li>object</li>
-<li>function</li>
-<li>boolean</li>
-<li>undefined</li>
-</ul>
-</li>
-<li>根据在内存中的存储形式划分<ul>
-<li>基本</li>
-<li>复杂</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>变量<ul>
-<li>声明关键字：var</li>
-<li>声明变量：var 变量名</li>
-<li>变量赋值：变量名 = 值</li>
-<li>变量的命名规则：<ol>
-<li>必须使用字母或_或$开头</li>
-<li>不出现除了_和$之外的特殊字符</li>
-<li>不允许使用关键字和保留字</li>
-<li>尽量语义化</li>
-<li>尽量适应数据类型的首字母做前缀</li>
-<li>尽量驼峰式<ul>
-<li>大：第一个单词首字母</li>
-<li>小：第二个单词首字母</li>
-</ul>
-</li>
-</ol>
-</li>
-</ul>
-</li>
-</ol>
-<h1 id="二、运算符"><a href="#二、运算符" class="headerlink" title="二、运算符"></a>二、运算符</h1><ol>
-<li><p>算术运算符</p>
-<ul>
-<li><code>+, -, *, /, %</code></li>
-<li>一般用来计算数值</li>
-<li>当<code>+</code>号任意一边出现字符时，+号的功能就是字符拼接</li>
-<li><code>-, *, /, %</code>会将两边的数据作为数值型数据计算</li>
-</ul>
-</li>
-<li><p>关系（比较）运算符</p>
-<ul>
-<li><code>&gt;, &gt;=, &lt;, &lt;=, ==, ===, !=, !==</code></li>
-<li>…</li>
-</ul>
-</li>
-<li><p>赋值运算符</p>
-<ul>
-<li><code>=, +=, -=, *=, /=, %=</code></li>
-<li><code>=</code>表示将右侧的数据放在左侧的变量中，重复赋值会覆盖原值</li>
-<li><code>+=, -=, *=, /=, %=</code>的规则请参考算术运算符</li>
-</ul>
-</li>
-<li><p>逻辑运算符</p>
-<ul>
-<li>或：||</li>
-<li>且（与）：&amp;&amp;</li>
-<li>非：!</li>
-</ul>
-</li>
-<li><p>一元运算符</p>
-<ul>
-<li><code>++</code>：自增1，在自身原有基础上增加1</li>
-<li><code>--</code>：自减1，在自身原有基础上减少1</li>
-<li>前：先计算，后使用</li>
-<li>后：先使用，再计算</li>
-</ul>
-</li>
-<li><p>隐式类型转换</p>
-<ul>
-<li>计算过程中不按照原本的数据类型计算，而是默认作为其他数据类型计算，该过程称为数据</li>
-</ul>
-</li>
-</ol>
-<h1 id="三、数据类型转换"><a href="#三、数据类型转换" class="headerlink" title="三、数据类型转换"></a>三、数据类型转换</h1><ol>
-<li><p>隐式类型转换：计算过程中不按照原本的数据类型计算，而是作为其他数据类型计算</p>
-<ul>
-<li>场景：<ol>
-<li>运算符</li>
-</ol>
-</li>
-<li>规则：<ol>
-<li>其他转数值：</li>
-<li>其他转布尔：</li>
-<li>其他转字符：</li>
-</ol>
-</li>
-</ul>
-</li>
-<li><p>显示（强制）类型转换</p>
-<ul>
-<li>其他转数值：<ul>
-<li>规则<ul>
-<li>严格转换：必须全部为数字，才能转成数值，否则NaN<ul>
-<li>“hello” — NaN</li>
-<li>“123a12” — NaN</li>
-<li>“12312” — 12312</li>
-</ul>
-</li>
-<li>非严格转换：从左向右检测，遇到第一个非数字的字符，停止转换；第一个字符就非数字，直接NaN<ul>
-<li>“123a12” — 123</li>
-<li>“hello” — NaN</li>
-<li>“a1231” — NaN</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>方法：<ul>
-<li>parseInt()<ul>
-<li>非严格转换，不能识别小数点</li>
-</ul>
-</li>
-<li>parseFloat()<ul>
-<li>非严格转换，能识别小数点</li>
-</ul>
-</li>
-<li>Math.round()<ul>
-<li>严格转换，四舍五入取最近的整数</li>
-</ul>
-</li>
-<li>Number()<ul>
-<li>严格转换，能识别小数点</li>
-<li>…</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>其他转布尔：<ul>
-<li>规则：<ul>
-<li>字符：非空字符为true，空为false</li>
-<li>数值：非0为true，0为false</li>
-<li>对象数组函数：都是true</li>
-<li>undefined,null,NaN：都是false</li>
-</ul>
-</li>
-<li>方法<ul>
-<li>Boolean()</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>其他转字符：<ul>
-<li>规则：<ul>
-<li>默认，类似于直接给数据添加引号</li>
-<li>保留n为小数，存在四舍五入</li>
-<li>对象默认转成：[object Object]</li>
-</ul>
-</li>
-<li>方法：<ul>
-<li>num.toString();</li>
-<li>num.toFixed(n);</li>
-<li>String();</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<h1 id="四、一些补充"><a href="#四、一些补充" class="headerlink" title="四、一些补充"></a>四、一些补充</h1><ol>
-<li><p>关于NaN</p>
-<ul>
-<li>NaN：not a Number，不是一个数字</li>
-<li>数据类型是：数值型</li>
-<li>表示非法的运算，或错误的转换</li>
-<li>如何判断是不是NaN<ul>
-<li>isNaN(要检测的数据或变量)<ul>
-<li>true：是NaN</li>
-<li>false：不是NaN</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>NaN与任何数据都不相等</li>
-</ul>
-</li>
-<li><p>js中的三大特殊数据</p>
-<ul>
-<li>undefined</li>
-<li>null</li>
-<li>NaN</li>
-</ul>
-</li>
-<li><p>关于计算机中的小数</p>
-<ul>
-<li>浮点数的精度问题</li>
-<li>因为计算中的数据在运算时会被转成二进制，计算结束后又会从二进制转回十进制</li>
-<li>二进制中也存在无限数字，计算系统的位数有限，省略某些位数，导致一些小数的计算不精确</li>
-</ul>
-</li>
-</ol>
-<h1 id="拓展：逻辑短路"><a href="#拓展：逻辑短路" class="headerlink" title="拓展：逻辑短路"></a>拓展：逻辑短路</h1>
+                <h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>在我们学习Java的过程中,掌握其中的基本概念对我们的学习无论是J2SE,J2EE,J2ME都是很重要的,J2SE是Java的基础,所以有必要对其中的基本概念做以归纳,以便大家在以后的学习过程中更好的理解java的精髓,在此我总结了30条基本的概念。</p>
+<h1 id="Java概述"><a href="#Java概述" class="headerlink" title="Java概述:"></a>Java概述:</h1><p> 　　目前Java主要应用于中间件的开发(middleware)—处理客户机于服务器之间的通信技术,早期的实践证明,Java不适合pc应用程序的开发,其发展逐渐变成在开发手持设备,互联网信息站,及车载计算机的开发.Java于其他语言所不同的是程序运行时提供了平台的独立性,称许可以在windows,solaris,linux其他操作系统上使用完全相同的代码.Java的语法与C++语法类似,C++/C程序员很容易掌握,而且Java是完全的彻底的面向对象的,其中提出了很好的GC(Garbage Collector)垃圾处理机制,防止内存溢出。</p>
+<h3 id="Java的白皮书为我们提出了Java语言的11个关键特性。"><a href="#Java的白皮书为我们提出了Java语言的11个关键特性。" class="headerlink" title="Java的白皮书为我们提出了Java语言的11个关键特性。"></a>Java的白皮书为我们提出了Java语言的11个关键特性。</h3><p> 　　(1)Easy:Java的语法比C++的相对简单,另一个方面就是Java能使软件在很小的机器上运行,基础解释其和类库的支持的大小约为40kb,增加基本的标准库和线程支持的内存需要增加125kb。</p>
+<p> 　　(2)分布式:Java带有很强大的TCP/IP协议族的例程库,Java应用程序能够通过URL来穿过网络来访问远程对象,由于servlet机制的出现,使Java编程非常的高效,现在许多的大的web server都支持servlet。</p>
+<p> 　　(3)OO:面向对象设计是把重点放在对象及对象的接口上的一个编程技术.其面向对象和C++有很多不同,在与多重继承的处理及Java的原类模型。</p>
+<p> 　　(4)健壮特性:Java采取了一个安全指针模型,能减小重写内存和数据崩溃的可能型。</p>
+<p> 　　(5)安全:Java用来设计网路和分布系统,这带来了新的安全问题,Java可以用来构建防病毒和防攻击的System.事实证明Java在防毒这一方面做的比较好。</p>
+<p> 　　(6)中立体系结构:Java编译其生成体系结构中立的目标文件格式可以在很多处理器上执行,编译器产生的指令字节码(Javabytecode)实现此特性,此字节码可以在任何机器上解释执行。</p>
+<p> 　　(7)可移植性:Java中对基本数据结构类型的大小和算法都有严格的规定所以可移植性很好。</p>
+<p> 　　(8)多线程:Java处理多线程的过程很简单,Java把多线程实现交给底下操作系统或线程程序完成.所以多线程是Java作为服务器端开发语言的流行原因之一。</p>
+<p> 　　(9)Applet和servlet:能够在网页上执行的程序叫Applet,需要支持Java的浏览器很多,而applet支持动态的网页,这是很多其他语言所不能做到的。</p>
+<p> 我认为，作为一名合格的程序员，精通一门语言只是最最基本的要求，除此之外，具备扎实的基础知识、了解主流的技术框架、具备快速学习的能力也都非常重要。语言是帮助你实现想法的工具，而作为程序员来说最为重要的东西是语言背后的你的想法，而这些想法需要通过长期的基础积累、经验积累而获得。</p>
+<p>我从大二的时候开始接触编程，到现在也有五个年头了。这五年我走了不少弯路、踩了不少坑。至此收到阿里offer，也算是达到了我人生第一阶段的目标。我把我这五年踩过的坑与大家分享，希望大家能少走弯路、在技术的道路上越走越远。</p>
+<p>回归正题，我觉得Java学习过程可以分为三个阶段：</p>
+<h2 id="第一阶段目标：打牢基础"><a href="#第一阶段目标：打牢基础" class="headerlink" title="第一阶段目标：打牢基础"></a><strong>第一阶段目标：打牢基础</strong></h2><p>​        当你准备开始接触Java前，你先等一等，因为你要做的第一件事是要打牢计算机基础，而非直接学习语言。当我做的项目渐渐多起来的时候，我愈发地感觉到计算机基础对程序员的重要性。这就像习武之人练习马步一样、<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E8%BE%BE%E8%8A%AC%E5%A5%87&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:237965231%7D">达芬奇</a>周而复始地画鸡蛋一样。从短期来看，基本功的练习并不会立即出成效。也许这个过程会伴随着枯燥乏味，但我们不能鼠目寸光，从长远角度来看，一个程序员基本功的扎实程度决定了这个程序员技术之路能走多远、能走多久。</p>
+<p>​        所以我觉得，如果时间允许的话，花上大半年甚至一年的时间学习基本功也不为过。学习任何一项技术都是一样，我们需要耐得住寂寞。<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E5%9F%BA%E6%9C%AC%E5%8A%9F&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:237965231%7D">基本功</a>学习的过程必然会枯燥乏味，但它对我们未来的发展之路却影响深远。所以大家一定要耐得住寂寞，迈好、并且迈稳作为程序员的第一步。</p>
+<p>​       计算机基础有五大课程：操作系统、计算机网络、数据结构、算法、数据库。你究竟需要花多少时间来学习这些基础课程，这取决于你目前的状态。如果你是计算机专业的学生，并且仍处于大一或大二，那就请你珍惜每次上课的机会吧。听老师讲一遍、自己再学一遍、有问题还可以和老师交流，这样的机会实在难得，且行且珍惜。</p>
+<p>​        如果你并不是计算机专业的学生，那也好办，调动你的情报搜集能力，去周边名校的计算机专业蹭课吧。我的学校靠近南大，就有很多同学潜入南大蹭<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E5%91%A8%E5%BF%97%E5%8D%8E&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:237965231%7D">周志华</a>大佬的机器学习。去了之后才发现，200人教室里人满为患，原来都是前来蹭课的同道中人啊。</p>
+<p>​        如果你即将面临找工作，那么就更应该抓紧猛攻这些基础课程。现在的互联网公司都很看重学生的基础功底，因为学校里做的项目在面试官的眼中大多都只能算是『玩具』（PS：大佬除外），所以项目经验只能算是你的加分项，基础功底才是第一要义。</p>
+<h2 id="第二阶段目标：精通Java"><a href="#第二阶段目标：精通Java" class="headerlink" title="第二阶段目标：精通Java"></a><strong>第二阶段目标：精通Java</strong></h2><p>​       作为一名Java程序员，对Java这门吃饭的语言必须要达到精通的程度。因为工作之后，每天接触最多的就是Java，其次才可能是你的女朋友（当然前提是得有女朋友，逃）。所谓『精通』是指你不仅得了解如何使用Java，还得明白它背后的原理，也就是得『知其然，知其所以然』。比如，我们都知道使用关键字new可以创建一个对象，但这远远不够，我们还得知道对象创建的过程是怎样的？对象创建完成后它存储在哪儿？什么时候会被GC回收？也只在有了解了它背后的原理后，我们才能写出更加高质量、高性能的代码。</p>
+<p>​       当然，学习Java也不是一步登天，可以把他分成两个阶段去学习。第一个阶段先把Java用起来，也就是只需要做到『知其然』即可。当熟悉了Java的所有语法、API之后，就可以拿几个项目练练手。项目能帮助你加深对基础语法、对API的理解。当你拥有了一些项目经验，对Java也有了自己的见解，接下来就可以深入Java背后的原理了，也就是开始『知其所以然』的过程。你需要学习JVM，了解Java的内存模型、内存的管理、垃圾回收、类加载机制；你需要学习并发编程，了解如何保证线程安全的前提下，提升程序的处理速度；你也需要开始尝试阅读JDK源码，了解<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=Java%E5%AE%B9%E5%99%A8&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:237965231%7D">Java容器</a>用了哪些数据结构，在什么样的业务场景下选择什么样的数据结构。</p>
+<p>​       学习Java的确是一个漫长的过程，也只有你的时间、你的耐心、你的思考，才能慢慢地开启通往Java世界的大门。</p>
+<h2 id="第三阶段目标：锻炼快速上手新技术的能力"><a href="#第三阶段目标：锻炼快速上手新技术的能力" class="headerlink" title="第三阶段目标：锻炼快速上手新技术的能力"></a><strong>第三阶段目标：锻炼快速上手新技术的能力</strong></h2><p>​        我觉得衡量一个程序员水平的高低，并不是看他精通多少种技术、擅长多少个框架，而是看他是否具备快速学习的能力。因为当下的技术层出不穷，技术更新迭代的速度远超过我们学习的速度。所以具备快速学习的能力尤为重要。当你已经具备一定的计算机基础之后，就可以有意识地锻炼自己的这项能力。那怎么锻炼呢？下面分享下我学习的体会。</p>
+<p>​        我觉得任何一项技术都遵循『2-8原则』，也就是在一项技术的整个体系结构中，最为核心、最为重要的部分可能仅仅占这项技术整个体系结构的20%，剩下的80%是相对次要的。所以，如果我们需要在比较短的时间内快速上手一项新技术的话，那么最为关键的就是要找准这项技术中20%的核心知识点，先把它们理解、吃透。这样就可以马上使用这项技术了。那么剩下80%的知识点可以在项目<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E7%A9%BA%E7%AA%97%E6%9C%9F&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:237965231%7D">空窗期</a>慢慢地补充。这样一段时间后，这项技术的整个体系结构都将被我们掌握。</p>
+<p>​        到了这个阶段，你可以开始接触一些应用层技术，比如：Spring、MyBatis、Shiro……学习这些技术最好的办法就是理论结合实践，以项目驱动的方式去学习。毕竟编程是一项熟能生巧的技术，多多动手能加深你对技术的理解，多多思考也能提高你编码的能力，两者相辅相成。并且在学习这些技术的过程中，可以有意识地采用这种『2-8原则』学习方法，培养自己快速学习的能力。举个栗子，如果你正要做的这个项目需要使用Spring，那么你首先要做的就是要花点时间，找到、并且找准Spring中最为核心的20%知识点——Ioc和AOP（这些信息可以通过大牛的博客、Spring的官网获得）。OK，那么Spring其他的技术先不用管，你要做的就是先把Ioc和AOP这两个概念搞懂，包括它们的使用方式、背后的思想。（PS：学习技术最好的途径就是看它的官网，然而官网一般都是英文，对于英文比较捉鸡的同学可以看一些大牛的博客、或者视频教程）当把这两个概念搞懂之后，Spring基本就可以为我们所用。接下来，我们可以利用项目的空窗期把Spring剩余80%的知识点慢慢地补充，这样一段时间后，Spring的整个体系结构就被我们掌握。然而在这整个过程中，还会涉及到你的信息搜索能力、信息理解能力，这些软实力都需要你通过大量的练习慢慢积累。所以，少年，抓紧时间，赶紧行动吧。</p>
+
                 
             </div>
             <hr/>
@@ -706,7 +509,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">Liu Chaojie</a>
+                    <a href="/about" rel="external nofollow noreferrer">Lu Chenming</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -716,7 +519,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/12/27/Js%E5%9F%BA%E7%A1%80/">http://example.com/2021/12/27/Js%E5%9F%BA%E7%A1%80/</a>
+                    <a href="http://example.com/2021/12/28/Java%E5%85%A5%E9%97%A8/">http://example.com/2021/12/28/Java%E5%85%A5%E9%97%A8/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -729,7 +532,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">Liu Chaojie</a>
+                    <a href="/about" target="_blank">Lu Chenming</a>
                     !
                 </span>
             </div>
@@ -754,12 +557,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/JavaScript/">
-                                    <span class="chip bg-color">JavaScript</span>
-                                </a>
-                            
-                                <a href="/tags/%E7%BD%91%E9%A1%B5/">
-                                    <span class="chip bg-color">网页</span>
+                                <a href="/tags/Java/">
+                                    <span class="chip bg-color">Java</span>
                                 </a>
                             
                         </div>
@@ -929,9 +728,55 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2021/12/28/Java%E5%85%A5%E9%97%A8/">
+                    <div class="card-image">
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Java入门">
+                        
+                        <span class="card-title">Java入门</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Java入门指南
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-28
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Lu Chenming
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2021/12/28/html%E5%85%A5%E9%97%A8/">
                     <div class="card-image">
@@ -948,9 +793,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-28
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-28
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -964,54 +809,6 @@
                     
                     <a href="/tags/html/">
                         <span class="chip bg-color">html</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/12/26/Pandas/">
-                    <div class="card-image">
-                        
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Pandas">
-                        
-                        <span class="card-title">Pandas</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            Python的一些介绍 and 使用
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-26
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            Liu Chaojie
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Pandas/">
-                        <span class="chip bg-color">Pandas</span>
-                    </a>
-                    
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
                     </a>
                     
                 </div>
