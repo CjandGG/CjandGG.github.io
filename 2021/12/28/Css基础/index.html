@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Js基础, CCandGG">
+    <meta name="keywords" content="Css基础, CCandGG">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Js基础 | CCandGG</title>
+    <title>Css基础 | CCandGG</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Js基础</h1>
+                    <h1 class="description center-align post-title">Css基础</h1>
                 </div>
             </div>
         </div>
@@ -431,12 +431,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/JavaScript/">
-                                <span class="chip bg-color">JavaScript</span>
+                            <a href="/tags/html/">
+                                <span class="chip bg-color">html</span>
                             </a>
                         
-                            <a href="/tags/%E7%BD%91%E9%A1%B5/">
-                                <span class="chip bg-color">网页</span>
+                            <a href="/tags/css/">
+                                <span class="chip bg-color">css</span>
                             </a>
                         
                     </div>
@@ -451,7 +451,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-12-27
+                    2021-12-28
                 </div>
                 
 
@@ -472,225 +472,17 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="一、js基础"><a href="#一、js基础" class="headerlink" title="一、js基础"></a>一、js基础</h1><ol>
-<li>js的组成<ul>
-<li>DOM：文档对象模型，document，网页的操作</li>
-<li>BOM：浏览器对象模型，window，浏览器的窗口操作</li>
-<li>ECMAScript：语法规范，规定js以什么形式在浏览器中操作网页，</li>
-</ul>
-</li>
-<li>js写在哪<ul>
-<li>内联：作为html的属性存在，通过行为触发</li>
-<li>内部：使用script标签包裹，可以不通过行为触发，会自动执行</li>
-<li>外部：写在js文件中，通过script的src属性引入到html文件中，可以不通过行为触发，会自动执行</li>
-</ul>
-</li>
-<li>js的打印语句<ul>
-<li>BOM：弹出框：alert()</li>
-<li>DOM：页面：document.write()</li>
-<li>V8引擎：控制台：console.log()</li>
-</ul>
-</li>
-<li>数据类型<ul>
-<li>根据typeof返回的结果划分<ul>
-<li>string</li>
-<li>number</li>
-<li>object</li>
-<li>function</li>
-<li>boolean</li>
-<li>undefined</li>
-</ul>
-</li>
-<li>根据在内存中的存储形式划分<ul>
-<li>基本</li>
-<li>复杂</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>变量<ul>
-<li>声明关键字：var</li>
-<li>声明变量：var 变量名</li>
-<li>变量赋值：变量名 = 值</li>
-<li>变量的命名规则：<ol>
-<li>必须使用字母或_或$开头</li>
-<li>不出现除了_和$之外的特殊字符</li>
-<li>不允许使用关键字和保留字</li>
-<li>尽量语义化</li>
-<li>尽量适应数据类型的首字母做前缀</li>
-<li>尽量驼峰式<ul>
-<li>大：第一个单词首字母</li>
-<li>小：第二个单词首字母</li>
-</ul>
-</li>
-</ol>
-</li>
-</ul>
-</li>
-</ol>
-<h1 id="二、运算符"><a href="#二、运算符" class="headerlink" title="二、运算符"></a>二、运算符</h1><ol>
-<li><p>算术运算符</p>
-<ul>
-<li><code>+, -, *, /, %</code></li>
-<li>一般用来计算数值</li>
-<li>当<code>+</code>号任意一边出现字符时，+号的功能就是字符拼接</li>
-<li><code>-, *, /, %</code>会将两边的数据作为数值型数据计算</li>
-</ul>
-</li>
-<li><p>关系（比较）运算符</p>
-<ul>
-<li><code>&gt;, &gt;=, &lt;, &lt;=, ==, ===, !=, !==</code></li>
-<li>…</li>
-</ul>
-</li>
-<li><p>赋值运算符</p>
-<ul>
-<li><code>=, +=, -=, *=, /=, %=</code></li>
-<li><code>=</code>表示将右侧的数据放在左侧的变量中，重复赋值会覆盖原值</li>
-<li><code>+=, -=, *=, /=, %=</code>的规则请参考算术运算符</li>
-</ul>
-</li>
-<li><p>逻辑运算符</p>
-<ul>
-<li>或：||</li>
-<li>且（与）：&amp;&amp;</li>
-<li>非：!</li>
-</ul>
-</li>
-<li><p>一元运算符</p>
-<ul>
-<li><code>++</code>：自增1，在自身原有基础上增加1</li>
-<li><code>--</code>：自减1，在自身原有基础上减少1</li>
-<li>前：先计算，后使用</li>
-<li>后：先使用，再计算</li>
-</ul>
-</li>
-<li><p>隐式类型转换</p>
-<ul>
-<li>计算过程中不按照原本的数据类型计算，而是默认作为其他数据类型计算，该过程称为数据</li>
-</ul>
-</li>
-</ol>
-<h1 id="三、数据类型转换"><a href="#三、数据类型转换" class="headerlink" title="三、数据类型转换"></a>三、数据类型转换</h1><ol>
-<li><p>隐式类型转换：计算过程中不按照原本的数据类型计算，而是作为其他数据类型计算</p>
-<ul>
-<li>场景：<ol>
-<li>运算符</li>
-</ol>
-</li>
-<li>规则：<ol>
-<li>其他转数值：</li>
-<li>其他转布尔：</li>
-<li>其他转字符：</li>
-</ol>
-</li>
-</ul>
-</li>
-<li><p>显示（强制）类型转换</p>
-<ul>
-<li>其他转数值：<ul>
-<li>规则<ul>
-<li>严格转换：必须全部为数字，才能转成数值，否则NaN<ul>
-<li>“hello” — NaN</li>
-<li>“123a12” — NaN</li>
-<li>“12312” — 12312</li>
-</ul>
-</li>
-<li>非严格转换：从左向右检测，遇到第一个非数字的字符，停止转换；第一个字符就非数字，直接NaN<ul>
-<li>“123a12” — 123</li>
-<li>“hello” — NaN</li>
-<li>“a1231” — NaN</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>方法：<ul>
-<li>parseInt()<ul>
-<li>非严格转换，不能识别小数点</li>
-</ul>
-</li>
-<li>parseFloat()<ul>
-<li>非严格转换，能识别小数点</li>
-</ul>
-</li>
-<li>Math.round()<ul>
-<li>严格转换，四舍五入取最近的整数</li>
-</ul>
-</li>
-<li>Number()<ul>
-<li>严格转换，能识别小数点</li>
-<li>…</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>其他转布尔：<ul>
-<li>规则：<ul>
-<li>字符：非空字符为true，空为false</li>
-<li>数值：非0为true，0为false</li>
-<li>对象数组函数：都是true</li>
-<li>undefined,null,NaN：都是false</li>
-</ul>
-</li>
-<li>方法<ul>
-<li>Boolean()</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>其他转字符：<ul>
-<li>规则：<ul>
-<li>默认，类似于直接给数据添加引号</li>
-<li>保留n为小数，存在四舍五入</li>
-<li>对象默认转成：[object Object]</li>
-</ul>
-</li>
-<li>方法：<ul>
-<li>num.toString();</li>
-<li>num.toFixed(n);</li>
-<li>String();</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<h1 id="四、一些补充"><a href="#四、一些补充" class="headerlink" title="四、一些补充"></a>四、一些补充</h1><ol>
-<li><p>关于NaN</p>
-<ul>
-<li>NaN：not a Number，不是一个数字</li>
-<li>数据类型是：数值型</li>
-<li>表示非法的运算，或错误的转换</li>
-<li>如何判断是不是NaN<ul>
-<li>isNaN(要检测的数据或变量)<ul>
-<li>true：是NaN</li>
-<li>false：不是NaN</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>NaN与任何数据都不相等</li>
-</ul>
-</li>
-<li><p>js中的三大特殊数据</p>
-<ul>
-<li>undefined</li>
-<li>null</li>
-<li>NaN</li>
-</ul>
-</li>
-<li><p>关于计算机中的小数</p>
-<ul>
-<li>浮点数的精度问题</li>
-<li>因为计算中的数据在运算时会被转成二进制，计算结束后又会从二进制转回十进制</li>
-<li>二进制中也存在无限数字，计算系统的位数有限，省略某些位数，导致一些小数的计算不精确</li>
-</ul>
-</li>
-</ol>
-<h1 id="拓展：逻辑短路"><a href="#拓展：逻辑短路" class="headerlink" title="拓展：逻辑短路"></a>拓展：逻辑短路</h1>
+                <h1 id="css常用代码大全"><a href="#css常用代码大全" class="headerlink" title="css常用代码大全"></a>css常用代码大全</h1><p>html+css代码 </p>
+<p>html+css可以很方便的进行网页的排版布局，还能减少很多不必要的代码。</p>
+<h2 id="一-文本设置"><a href="#一-文本设置" class="headerlink" title="一.文本设置"></a>一.文本设置</h2><p>1、font-size: 字号参数<br>2、font-style: 字体格式<br>3、font-weight: 字体粗细<br>4、颜色属性<br>color: 参数<br>注意使用网页安全色</p>
+<h2 id="二、超链接设置"><a href="#二、超链接设置" class="headerlink" title="二、超链接设置"></a>二、超链接设置</h2><p>text-decoration: 参数<br>主要用途是改变浏览器显示文字链接时的下划线。<br>参数取值范围：<br>underline：为文字加下划线<br>overline：为文字加上划线<br>line-through：为文字加删除线<br>blink：使文字闪烁<br>none：不显示上述任何效果</p>
+<h2 id="三、背景"><a href="#三、背景" class="headerlink" title="三、背景"></a>三、背景</h2><p>1、背景颜色<br>background-color: 参数<br>2、背景图片<br>background-image: url(URL)<br>URL就是背景图片的存放路径，none表示无。<br>3、背景图片重复<br>background-repeat: 参数<br>参数取值范围 ：<br>no-repeat：不重复平铺背景图片<br>repeat-x：使图片只在水平方向上平铺<br>repeat-y：使图片只在垂直方向上平铺<br>如果不指定背景图片重复属性，浏览器默认的是背景图片向水平、垂直两个方向上平铺。<br>4、背景图片固定<br>背景图片固定控制背景图片是否随网页的滚动而滚动。如果不设置背景图片固定属性，浏览器默认背景图片随网页的滚动而滚动。为了避免过于花哨的背景图片在滚动时转移浏览者的注意力，一般都设为固定<br>background-attachment: 参数<br>参数取值范围：<br>fixed：网页滚动时，背景图片相对于浏览器的窗口而言，固定不动<br>scroll：网页滚动时，背景图片相对于浏览器的窗口而言，一起滚动</p>
+<h2 id="四、区块"><a href="#四、区块" class="headerlink" title="四、区块"></a>四、区块</h2><p>1、单词间距<br>word-spacing: 间隔距离<br>2、字母间距<br>letter-spacing: 字母间距<br>3、文本对齐<br>text-align: 参数<br>参数的取值：<br>left：左对齐<br>right：右对齐<br>center：居中对齐<br>justify：相对左右对齐<br>4、垂直对齐<br>vertical-align: 参数<br>top：顶对齐<br>bottom：底对齐<br>text-top：相对文本顶对齐<br>text-bottom：相对文本底对齐<br>baseline：基准线对齐<br>middle：中心对齐<br>sub：以下标的形式显示<br>super：以上标的形式显示<br>5、文本缩进<br>text-indent: 缩进距离<br>12px相当于一个文字距离<br>6、空格<br>white-space: 参数<br>normal 正常<br>pre 保留<br>nowrap 不换行<br>7、显示样式<br>display: 参数<br>参数取值范围：<br>block：块级元素，在对象前后都换行<br>inline：在对象前后都不换行<br>list-item：在对象前后都换行，增加了项目符号<br>none：无显示</p>
+<h2 id="五、方框"><a href="#五、方框" class="headerlink" title="五、方框"></a>五、方框</h2><p>1、height 高度<br>2、width 宽度<br>3、padding 内边距<br>4、margin 外边距<br>5、float（浮动）：可以让块级元素在一行中排列，例如横向菜单。<br>6、clear 清除浮动</p>
+<h2 id="六、边框"><a href="#六、边框" class="headerlink" title="六、边框"></a>六、边框</h2><p>1、样式<br>border style 参数<br>边框样式的参数：<br>none：无边框<br>dotted：边框为点线<br>dashed：边框为长短线<br>solid：边框为实线<br>double：边框为双线<br>2、宽度<br>border width 参数<br>3、颜色<br>border color 参数</p>
+<h2 id="七、列表"><a href="#七、列表" class="headerlink" title="七、列表"></a>七、列表</h2><p>list-style-type 列表样式<br>不同浏览器的列表符可能不相同，可能会影响到网页，所以网页中的列表大多都是由背景图片显示。<br>控制用户界面的样式</p>
+<h2 id="八、鼠标"><a href="#八、鼠标" class="headerlink" title="八、鼠标"></a>八、鼠标</h2><p>cursor：鼠标形状参数<br>CSS鼠标形状参数表：<br>鼠标形状：CSS代码<br>style=”cursor:hand” 　　　　　手形<br>style=”cursor:crosshair” 　　十字形<br>style=”cursor:text” 　　　　　文本形<br>style=”cursor:wait” 　　　　　沙漏形<br>style=”cursor:move” 　　　　十字箭头形：<br>style=”cursor:help” 　　　　　问号形<br>style=”cursor:e-resize” 　　　右箭头形<br>style=”cursor:n-resize” 　　　上箭头形<br>style=”cursor:nw-resize” 　　左上箭头形<br>style=”cursor:w-resize” 　　　左箭头形<br>style=”cursor:s-resize” 　　　下箭头形<br>style=”cursor:se-resize” 　　右下箭头形<br>style=”cursor:sw-resize” 　　左下箭头形</p>
+
                 
             </div>
             <hr/>
@@ -706,7 +498,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">Liu Chaojie</a>
+                    <a href="/about" rel="external nofollow noreferrer">Lu Longlong</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -716,7 +508,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/12/27/Js%E5%9F%BA%E7%A1%80/">http://example.com/2021/12/27/Js%E5%9F%BA%E7%A1%80/</a>
+                    <a href="http://example.com/2021/12/28/Css%E5%9F%BA%E7%A1%80/">http://example.com/2021/12/28/Css%E5%9F%BA%E7%A1%80/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -729,7 +521,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">Liu Chaojie</a>
+                    <a href="/about" target="_blank">Lu Longlong</a>
                     !
                 </span>
             </div>
@@ -754,12 +546,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/JavaScript/">
-                                    <span class="chip bg-color">JavaScript</span>
+                                <a href="/tags/html/">
+                                    <span class="chip bg-color">html</span>
                                 </a>
                             
-                                <a href="/tags/%E7%BD%91%E9%A1%B5/">
-                                    <span class="chip bg-color">网页</span>
+                                <a href="/tags/css/">
+                                    <span class="chip bg-color">css</span>
                                 </a>
                             
                         </div>
@@ -933,18 +725,18 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/12/28/html%E5%85%A5%E9%97%A8/">
+                <a href="/2021/12/28/Hadoop/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="html入门">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Hadoop">
                         
-                        <span class="card-title">html入门</span>
+                        <span class="card-title">Hadoop</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            html入门指南
+                            hadoop
                         
                     </div>
                     <div class="publish-info">
@@ -954,7 +746,7 @@
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            Shi Qiwen
+                            Dong Huaize
                             
                         </span>
                     </div>
@@ -962,8 +754,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/html/">
-                        <span class="chip bg-color">html</span>
+                    <a href="/tags/hadoop/">
+                        <span class="chip bg-color">hadoop</span>
                     </a>
                     
                 </div>
@@ -977,28 +769,28 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/12/26/NumPy/">
+                <a href="/2021/12/28/Java%E5%85%A5%E9%97%A8/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="NumPy介绍">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Java入门">
                         
-                        <span class="card-title">NumPy介绍</span>
+                        <span class="card-title">Java入门</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            NumPy的一些介绍 and 使用
+                            Java入门指南
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-28
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            Liu Chaojie
+                            Lu Chenming
                             
                         </span>
                     </div>
@@ -1006,8 +798,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/NumPy/">
-                        <span class="chip bg-color">NumPy</span>
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
                     </a>
                     
                 </div>
